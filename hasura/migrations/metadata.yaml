@@ -1,0 +1,22 @@
+version: 2
+tables: []
+actions:
+- name: forutnes
+  definition:
+    handler: https://hasuracon-actions.int.lineup.ninja/handler
+    output_type: FortuneOutput
+    arguments:
+    - name: arg1
+      type: FortuneInput!
+    type: query
+custom_types:
+  input_objects:
+  - name: FortuneInput
+    fields:
+    - name: count
+      type: Int!
+  objects:
+  - name: FortuneOutput
+    fields:
+    - name: fortunes
+      type: '[String!]'

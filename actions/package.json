@@ -1,0 +1,25 @@
+{
+  "name": "actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -p src"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.48",
+    "@types/node": "13.11.1",
+    "@typescript-eslint/eslint-plugin": "2.27.0",
+    "@typescript-eslint/parser": "2.27.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "7.2.1",
+    "eslint-plugin-import": "2.20.2",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "aws-lambda": "1.0.5",
+    "aws-sdk": "2.656.0",
+    "fortune-teller": "0.1.2"
+  }
+}

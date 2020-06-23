@@ -1,0 +1,34 @@
+- args:
+    enums: []
+    input_objects:
+    - description: null
+      fields:
+      - description: null
+        name: count
+        type: Int!
+      name: FortuneInput
+    objects:
+    - description: null
+      fields:
+      - description: null
+        name: fortunes
+        type: '[String!]'
+      name: FortuneOutput
+      relationships: null
+    scalars: []
+  type: set_custom_types
+- args:
+    comment: null
+    definition:
+      arguments:
+      - description: null
+        name: arg1
+        type: FortuneInput!
+      forward_client_headers: false
+      handler: https://hasuracon-actions.int.lineup.ninja/handler
+      headers: []
+      kind: synchronous
+      output_type: FortuneOutput
+      type: query
+    name: forutnes
+  type: create_action

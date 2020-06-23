@@ -1,0 +1,12 @@
+
+!.eslintrc.js
+!jest.config.js
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk.outputs.json
+
+# Exclude env files - They are created dynamically or contain secure properties
+.env
