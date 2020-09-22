@@ -34,7 +34,7 @@ export class HasuraStack extends Stack {
             instanceIdentifier: props.appName,
             databaseName: hasuraDatabaseName,
             engine: DatabaseInstanceEngine.POSTGRES,
-            instanceClass: InstanceType.of(InstanceClass.BURSTABLE3, InstanceSize.MICRO),
+            instanceType: InstanceType.of(InstanceClass.BURSTABLE3, InstanceSize.MICRO),
             masterUsername: 'syscdk',
             storageEncrypted: true,
             allocatedStorage: 20,

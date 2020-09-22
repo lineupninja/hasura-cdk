@@ -12,4 +12,3 @@ cdk.out
 .build
 
 cdk.context.json
-cdk.json
