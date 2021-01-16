@@ -40,6 +40,7 @@ export class HasuraStack extends Stack {
             allocatedStorage: 20,
             maxAllocatedStorage: 100,
             vpc: props.vpc,
+            vpcSubnets: { subnetType: SubnetType.ISOLATED },
             deletionProtection: false,
             multiAz: props.multiAz,
             removalPolicy: RemovalPolicy.DESTROY,
